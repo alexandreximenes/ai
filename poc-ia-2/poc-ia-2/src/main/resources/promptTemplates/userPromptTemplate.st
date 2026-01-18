@@ -1,0 +1,1 @@
+ Draft a professional email response to the customer named {customerName} based on their message: "{customerMessage}"

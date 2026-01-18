@@ -1,0 +1,63 @@
+spring:
+  application:
+    name: @project.artifactId@
+
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+  datasource:
+    url: ${DB_H2_URL_CONFIG}
+    hikari:
+      jdbc-url: ${DB_H2_HIRAKI_URL_CONFIG}
+    driver-class-name: org.h2.Driver
+    username: ${DB_H2_USERNAME}
+    password: ${DB_H2_PASSWORD}
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  ai:
+    chat:
+      client:
+        enabled: false
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+            schema: ${CLASSPATH_DB_SCHEMA}
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: ${OPENAI_MODEL_VERSION}
+    ollama:
+      chat:
+        options:
+          model: ${OLLAMA_MODEL_VERSION}
+    model:
+      chat: ollama
+
+logging:
+  pattern:
+    console: ${LOGGING_PATTERN_CONSOLE}
+  level:
+    root: INFO
+    com:
+      ia:
+        poc_ia_2: INFO
+    org:
+      springframework:
+        web: INFO
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+
+
+
+

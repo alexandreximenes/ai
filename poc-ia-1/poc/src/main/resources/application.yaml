@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: poc
+
+  logging:
+    pattern:
+      console: "%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: ${OPENIA_MODEL_VERSION}
+    ollama:
+      chat:
+        options:
+          model: ${OLLAMA_MODEL_VERSION}
+    model:
+      chat: ollama
+
+
+
+
