@@ -58,11 +58,9 @@ A imagem abaixo demonstra o fluxo completo desde a **entrada do usuário**, pass
 ### Visão Geral
 #### Diagrama de Contexto do C4 (Nivel 1)
 
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-0.png)
+![Casos de Uso](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-0.png)
 
 ---
-### Visão Detalhe
-#### Diagrama de Container do C4 (Nivel 2)
 
 ### 🛠️ Aplicação Web Admin
 Responsável pela **administração e governança da IA**, incluindo:
@@ -79,6 +77,11 @@ Interface voltada ao **usuário final**, permitindo:
 - Interação direta com o LLM
 - Respostas contextualizadas (RAG)
 - Continuidade conversacional
+
+---
+
+### Visão Detalhe
+#### Diagrama de Container do C4 (Nivel 2) do backend
 
 ![Casos de Uso](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-2.png)
 
