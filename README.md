@@ -27,7 +27,8 @@ O objetivo é demonstrar, de forma incremental, como construir aplicações corp
 - Implementação de **Retrieval-Augmented Generation (RAG)**
 - Integração com **Qdrant** como banco vetorial
 - Busca semântica baseada em embeddings
-- Respostas enriquecidas com **contexto externo** relevante
+- Respostas enriquecidas com **contexto privado** relevante
+- **Contexto privado** que empresas e organizações precisam se expor seus dados ao mundo externo.
 
 ---
 
