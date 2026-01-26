@@ -127,6 +127,36 @@ Fluxo detalhado da interação entre:
 
 ---
 
+## 🧠 POC 4 – Implementação de Tools
+📌 Objetivo
+
+Permitir que o LLM vá além do conhecimento estático de treinamento, integrando fontes de dados externas, sistemas internos e serviços corporativos para gerar respostas contextualizadas, atualizadas e acionáveis.
+
+### 🧩 Conceito de Tools (Function Calling / Tool Calling)
+
+Tools são funções/serviços que o LLM pode invocar dinamicamente durante a conversa para:
+
+- Consultar APIs
+- Acessar bancos de dados
+- Executar regras de negócio
+- Buscar dados em sistemas legados
+- Consultar serviços externos (clima, ERP, CRM, pagamentos, etc.)
+- O LLM não apenas responde — ele orquestra fluxos de execução.
+
+![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/tools-1.png)
+
+### 🔁 Fluxo de Funcionamento
+
+- Usuário envia a pergunta
+- LLM interpreta a intenção
+- LLM decide se precisa de uma Tool
+- Tool é chamada automaticamente
+- Sistema executa a função
+- Resultado retorna ao LLM
+- LLM gera resposta final enriquecida
+
+---
+
 ## 📌 Tecnologias Envolvidas
 - **Java / Spring Boot**
 - **Spring AI**
