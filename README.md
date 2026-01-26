@@ -25,6 +25,14 @@ Aplicação que faz toda administração de envio de informações para parametr
 ### Aplicação Chat (prompt)
 Aplicação que faz a iteração do Usuario final com o LLM, enviando prompts.
 
+### Visão Geral
+#### Diagrama de Contexto do C4 (Nivel 1)
+
+![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-0.png)
+
+### Visão Detalhe
+#### Diagrama de Container do C4 (Nivel 2)
+
 ![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-2.png)
 
 #### Visão ampliada da Aplicação Web Admin
