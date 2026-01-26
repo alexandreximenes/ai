@@ -1,29 +1,40 @@
-## POC com Spring AI + RAG
+# 🚀 POC – Spring AI com RAG (Retrieval-Augmented Generation)
 
-## POC 1
-Iteração inicial com LLM
+Este repositório apresenta uma **Prova de Conceito (POC)** para exploração de **IA Generativa com Spring AI**, evoluindo de uma interação simples com LLM até uma arquitetura completa com **RAG** e **Vector Store (Qdrant)**.
 
-## POC 2
-Iteração Aplicação com banco de dados Relacional para armazenar historico de conversas 
+O objetivo é demonstrar, de forma incremental, como construir aplicações corporativas modernas utilizando **LLMs**, **memória conversacional**, **persistência relacional** e **busca vetorial**.
 
-## POC 3
-Aplicação com RAG utilizando Vector Store (Qdrant)
+---
 
-## Contexto Spring IA
+## 🧪 Evolução das Provas de Conceito
 
-### As POCs foram submetidas a experiencias com essas tecnologias abaixo:
+### 🔹 POC 1 – Interação Básica com LLM
+- Primeira iteração com um **Large Language Model (LLM)**
+- Envio de prompts simples
+- Respostas diretas sem memória ou contexto persistente
 
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/spring-ai.png)
+---
 
-### Demonstração de como é feita a interação entre a entrada do usuário e o AI Provider que responderá as perguntas enviadas
+### 🔹 POC 2 – Persistência de Histórico de Conversas
+- Evolução para uma aplicação com **banco de dados relacional**
+- Armazenamento do histórico de conversas
+- Introdução de **memória conversacional**
+- Base para auditoria e continuidade de diálogos
 
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-1.png)
+---
 
-### Casos de Uso
-### Aplicação Web Admin
-Aplicação que faz toda administração de envio de informações para parametrizar tokens e para envio de documentos e informações ao banco Vetorial
-### Aplicação Chat (prompt)
-Aplicação que faz a iteração do Usuario final com o LLM, enviando prompts.
+### 🔹 POC 3 – RAG com Vector Store (Qdrant)
+- Implementação de **Retrieval-Augmented Generation (RAG)**
+- Integração com **Qdrant** como banco vetorial
+- Busca semântica baseada em embeddings
+- Respostas enriquecidas com **contexto privado** relevante
+- **Contexto privado** que empresas e organizações precisam ***sem expor*** seus dados ao mundo externo.
+
+---
+
+## 🧠 Contexto – Spring AI
+
+As POCs foram desenvolvidas e validadas utilizando os principais componentes do **Spring AI**, explorando:
 
 ### Visão Geral
 #### Diagrama de Contexto do C4 (Nivel 1)
@@ -35,34 +46,101 @@ Aplicação que faz a iteração do Usuario final com o LLM, enviando prompts.
 
 ![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-2.png)
 
-#### Visão ampliada da Aplicação Web Admin
+![Spring AI Overview](https://github.com/alexandreximenes/ai/blob/main/img/spring-ai.png)
 
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-3.png)
+---
 
-#### Visão ampliada da Aplicação Chat (prompt)
+## 🔄 Fluxo de Interação com o AI Provider
 
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-4.png)
+A imagem abaixo demonstra o fluxo completo desde a **entrada do usuário**, passando pelo **processamento da aplicação**, até a **resposta do AI Provider**.
 
-## POC 3
+![Fluxo de Interação](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-1.png)
 
-### Implementando uma RAG
-#### Visão Geral
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/rag-1-a.png)
+---
 
-#### Visão Detalhada
-![Texto alternativo](https://github.com/alexandreximenes/ai/blob/main/img/rag-2-b.png)
+## 🧩 Casos de Uso
 
+### Visão Geral
+#### Diagrama de Contexto do C4 (Nivel 1)
 
+![Casos de Uso](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-0.png)
 
+---
 
+### 🛠️ Aplicação Web Admin
+Responsável pela **administração e governança da IA**, incluindo:
+- Configuração de parâmetros de inferência (tokens, temperatura, etc.)
+- Envio e ingestão de documentos
+- Gerenciamento do banco vetorial
+- Preparação de dados para RAG
 
+---
 
+### 💬 Aplicação Chat (Prompt)
+Interface voltada ao **usuário final**, permitindo:
+- Envio de prompts
+- Interação direta com o LLM
+- Respostas contextualizadas (RAG)
+- Continuidade conversacional
 
+---
 
+### Visão Detalhe
+#### Diagrama de Container do C4 (Nivel 2) do backend
 
+![Casos de Uso](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-2.png)
 
+---
 
+## 🔍 Visões Detalhadas
 
+### 📌 Aplicação Web Admin – Visão Ampliada
+![Admin App](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-3.png)
 
+### 📌 Aplicação Chat – Visão Ampliada
+![Chat App](https://github.com/alexandreximenes/ai/blob/main/img/use-case-ia-4.png)
 
+---
+
+## 🧠 POC 3 – Implementação de RAG
+
+### 📖 Visão Geral da Arquitetura RAG
+Demonstra o fluxo completo de:
+- Ingestão de documentos
+- Geração de embeddings
+- Armazenamento no Vector Store
+- Recuperação de contexto relevante
+- Geração de respostas enriquecidas
+
+![RAG Overview](https://github.com/alexandreximenes/ai/blob/main/img/rag-1-a.png)
+
+---
+
+### 🔎 Visão Detalhada do Processo RAG
+Fluxo detalhado da interação entre:
+- Prompt do usuário
+- Busca vetorial
+- Contextualização
+- Resposta final do LLM
+
+![RAG Detailed](https://github.com/alexandreximenes/ai/blob/main/img/rag-2-b.png)
+
+---
+
+## 📌 Tecnologias Envolvidas
+- **Java / Spring Boot**
+- **Spring AI**
+- **LLMs (via AI Provider)**
+- **Qdrant (Vector Store)**
+- **Banco de Dados Relacional**
+- **Docker / Docker Compose**
+
+---
+
+## 🎯 Objetivo Final
+Demonstrar como arquitetar soluções de **IA Generativa corporativas**, escaláveis e observáveis, utilizando **Spring AI**, com foco em:
+- Qualidade de respostas
+- Redução de alucinações
+- Uso eficiente de contexto
+- Evolução incremental da arquitetura
 

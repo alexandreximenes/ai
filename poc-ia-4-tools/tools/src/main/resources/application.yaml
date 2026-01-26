@@ -1,0 +1,88 @@
+spring:
+  application:
+    name: poc-tools
+
+  threads:
+    virtual:
+      enabled: true
+
+  docker:
+    compose:
+      stop:
+        command: down
+
+  servlet:
+    multipart:
+      max-file-size: ${SERVLET_MAX_FILE_SIZE:100MB}
+      max-request-size: ${SERVLET_MAX_REQUEST_SIZE:100MB}
+
+  datasource:
+    url: ${DB_H2_URL_CONFIG}
+    hikari:
+      jdbc-url: ${DB_H2_HIRAKI_URL_CONFIG}
+    driver-class-name: org.h2.Driver
+    username: ${DB_H2_USERNAME}
+    password: ${DB_H2_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  ai:
+    vectorstore:
+      qdrant:
+        initialize-schema: true
+        host: ${QDRANT_HOST}
+        port: ${QDRANT_PORT}
+        collection-name: ${COLLECTION_NAME}
+
+    chat:
+      client:
+        enabled: true
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+            schema: ${CLASSPATH_DB_SCHEMA}
+
+    ollama:
+      embedding:
+        options:
+          model: ${OLLAMA_EMBEDDING_MODEL}
+      chat:
+        options:
+          model: ${OLLAMA_MODEL_VERSION}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+        web: INFO
+
+    web:
+      servlet:
+        mvc:
+          method:
+            annotation:
+              RequestMappingHandlerMapping: DEBUG
+  pattern:
+    console: ${LOGGING_PATTERN_CONSOLE}
+
+app:
+  chat-memory:
+    max-messages: ${CHAT_MEMORY_MAX_MESSAGES:10}
