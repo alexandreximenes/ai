@@ -27,7 +27,7 @@ public class RHDataLoader {
 
     private static final Logger log = LoggerFactory.getLogger(RHDataLoader.class);
     public RHDataLoader(VectorStore vectorStore,
-                        @Value("classpath:./pdf/Eazybytes_HR_Policies.pdf") Resource policyFile,
+                        @Value("classpath:./pdf/HR_Policies.pdf") Resource policyFile,
                         RhProperties properties) {
         this.vectorStore = vectorStore;
         this.policyFile = policyFile;
