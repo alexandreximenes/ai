@@ -113,7 +113,7 @@ Clique em **Connect**.
 2. Visualize a lista de tools expostas pelo MCP Server
 3. Selecione a tool desejada (ex: `createTicket`)
 
-![Inspector - Tools](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/1.png)
+![Inspector - Tools](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/1.png)
 
 ---
 
@@ -122,11 +122,11 @@ Clique em **Connect**.
 1. Preencha os campos definidos pela tool
 2. Clique em **Run Tool**
 
-![Create Ticket](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/2.png)
+![Create Ticket](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/2.png)
 
 ✅ O ticket é persistido no PostgreSQL.
 
-![Ticket no Banco](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/3.png)
+![Ticket no Banco](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/3.png)
 
 ---
 
@@ -134,11 +134,11 @@ Clique em **Connect**.
 
 #### Exemplo: `alexandre@alexandreximenes.ai`
 
-![Busca por Username](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/4.png)
+![Busca por Username](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/4.png)
 
 #### Exemplo: `amanda@alexandreximenes.ai`
 
-![Busca por Username](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/5.png)
+![Busca por Username](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/5.png)
 
 ---
 
@@ -146,11 +146,11 @@ Clique em **Connect**.
 
 #### Deletar ticket por ID
 
-![Delete por ID](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/6.png)
+![Delete por ID](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/6.png)
 
 #### Estado do banco após exclusão
 
-![Banco após delete](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/8.png)
+![Banco após delete](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/8.png)
 
 ---
 
@@ -158,15 +158,15 @@ Clique em **Connect**.
 
 #### Exemplo: delete por `username`
 
-![Delete por Username](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/7.png)
+![Delete por Username](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/7.png)
 
 #### Banco de dados após a operação
 
-![Banco limpo](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/9.png)
+![Banco limpo](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/9.png)
 
 #### Consulta confirmando exclusão
 
-![Consulta vazia](http://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/10.png)
+![Consulta vazia](https://github.com/alexandreximenes/ai/blob/main/poc-ai-5-mcp/img/10.png)
 
 ---
 
