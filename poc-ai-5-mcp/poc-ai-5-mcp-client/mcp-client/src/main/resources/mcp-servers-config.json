@@ -21,7 +21,7 @@
         "mcp/github"
       ],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "github_pat_minha_credencial_aqui"
       }
     }
   }
