@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: mcp-server
+
+  main:
+    web-application-type: none # MCP Non-web application
+    banner-mode: off
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: root
+    password: secret
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      jdbc-url: jdbc:postgresql://localhost:5432/postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    root: ERROR
+    com.ia.mcp_server.McpServerApplication: INFO
+
+app:
+  chat-memory:
+    max-messages: ${CHAT_MEMORY_MAX_MESSAGES:10}

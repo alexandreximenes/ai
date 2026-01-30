@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: mcp-client
+
+  threads:
+    virtual:
+      enabled: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  ai:
+    mcp:
+      client:
+        version: 1.0.0
+        request-timeout: 20s
+        stdio:
+          servers-configuration: classpath:/mcp-servers-config.json
+    chat:
+      client:
+        enabled: true
+
+    ollama:
+      embedding:
+        options:
+          model: ${OLLAMA_EMBEDDING_MODEL}
+      chat:
+        options:
+          model: ${OLLAMA_MODEL_VERSION}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+        web: INFO
+
+    web:
+      servlet:
+        mvc:
+          method:
+            annotation:
+              RequestMappingHandlerMapping: DEBUG
+
+  pattern:
+    console: "%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"

@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:/Users/alexandreximenes/Documents/projetos/java/POC-IA/poc-ai-5-mcp/poc-ai-5-mcp-client/mcp-client/mcp"
+      ]
+    },
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "mcp/github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    }
+  }
+}
